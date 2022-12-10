@@ -26,6 +26,9 @@ const numberButtons = document.querySelectorAll(".number");
 
 const operators = document.querySelectorAll(".operator");
 
+const del = document.querySelector(".delete");
+del.addEventListener("click", handleDelete);
+
 numberButtons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     handleNumber(e.target.textContent);
